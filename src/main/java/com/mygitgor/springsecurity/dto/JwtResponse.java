@@ -2,11 +2,11 @@ package com.mygitgor.springsecurity.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 @Data
 @AllArgsConstructor
-public class UserDto {
-    private Long id;
-    private String username;
-    private String email;
+public class JwtResponse {
+    private String token;
 }

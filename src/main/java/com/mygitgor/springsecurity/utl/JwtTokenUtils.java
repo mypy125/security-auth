@@ -8,6 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
+import javax.security.auth.Subject;
 import java.time.Duration;
 import java.util.Date;
 import java.util.HashMap;
@@ -36,12 +37,15 @@ public class JwtTokenUtils {
                 .compact();
     }
 
-    public List<String> getUsername(String token){
-        return getAllClaimsFromToken(token).get("roles", List.class);
+    public String getUsername(String token){
+        return getAllClaimsFromToken(token).getSubject();
     }
 
     public Claims getAllClaimsFromToken(String token){
         return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
     }
 
+    public List<String> getRoles(String token){
+        return getAllClaimsFromToken(token).get("roles",List.class);
+    }
 }
