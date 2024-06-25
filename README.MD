@@ -1,8 +1,8 @@
-# Sequrity Authentication Project (Authentication and Role Management)
+# Authentication and Authorization Project
 
 ## Project Description
 
-**Taco Cloud Restaurant** is a web application for ordering food. Users can browse the menu, select dishes, place orders, and pay online. Administrators can manage the menu, add new dishes, manage orders, and handle user accounts.
+**Authentication** is the process of verifying the identity of a user or organization, while **authorization** determines what resources the user can access and ensures that the user or organization receives the appropriate access or permissions within the system. Authentication is a prerequisite for authorization.
 
 **Location:** Yerevan  
 **Date:** 04/2024  
@@ -11,11 +11,7 @@
 Web Development in Java  
 **Name:** Gagikovich Gor Mkhitaryan
 
-**Project URL:** [https://github.com/mypy125/security-auth](https://github.com/mypy125/security-auth)
-
-## Inspiration
-
-I researched and analyzed many trending products relevant to our market. I decided to create an application that helps people order food without leaving their homes. The name "Taco Cloud" was inspired by Craig Walls' book "Spring in Action," where the examples involved creating a taco-cloud. Initially, the book helped me, but then I added more functionality, more services, and evolved it into what it is now, dividing it into microservices.
+**Project URL:** [https://github.com/mypy125/Taco-Cloud](https://github.com/mypy125/Taco-Cloud)
 
 ## Technology Stack
 
@@ -29,52 +25,26 @@ I researched and analyzed many trending products relevant to our market. I decid
 
 ## Application Benefits
 
-- Convenient and easy online food ordering
-- Wide selection of restaurants and dishes
-- Secure transactions and user data processing
-- Flexible microservices architecture for scalability and development
+- Secure and reliable user authentication
+- Fine-grained user authorization
+- Convenient user management and access control
+- Robust data migration and management
+- Efficient in-memory database for development and testing
 
 ## Functional Features
 
-- Search for restaurants and dishes
-- View menu and place orders
-- Payment and order management
-- User authentication and security
-- Account and favorites management
+- User registration and login
+- Role-based access control
+- Token-based authentication using JJWT
+- Secure password storage and validation
+- Database migration and version control with FlywayDB
+- In-memory database for development with H2 Database
 
-## Microservices and Entities
+## Key Entities
 
-The application is divided into microservices, each with its own database containing only the necessary tables for its operation. This ensures a more modular and scalable architecture.
-
-### Authentication and User Management
+### User Management
 
 - **Entities:** User, Role, ContactInformation
-- **Description:** Manages user authentication and profiles.
+- **Description:** Manages user authentication, roles, and profiles.
 - **Technologies:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, JJWT, FlywayDB, H2 Database
-
-### Location and Categories
-
-- **Entities:** Address, Category
-- **Description:** Handles location information and food categories.
-- **Technologies:** Spring Boot, Spring Data JPA, Hibernate, FlywayDB, H2 Database
-
-### Products and Ingredients
-
-- **Entities:** Food, IngredientCategory, IngredientItem
-- **Description:** Manages the menu, food items, and their ingredients.
-- **Technologies:** Spring Boot, Spring Web, Spring Data JPA, Hibernate, FlywayDB, H2 Database
-
-### Order Processing and Cart Management
-
-- **Entities:** Cart, CartItem, Order, OrderItem
-- **Description:** Handles order placement, cart management, and order tracking.
-- **Technologies:** Spring Boot, Spring Web, Spring Data JPA, Hibernate, FlywayDB, H2 Database
-
-### Restaurant Management
-
-- **Entities:** Restaurant
-- **Description:** Manages restaurant information and operations.
-- **Technologies:** Spring Boot, Spring Data JPA, Hibernate, FlywayDB, H2 Database
-
-In the future, each microservice will be enhanced and expanded as needed, ensuring the application remains modular and scalable.
-
+ 
