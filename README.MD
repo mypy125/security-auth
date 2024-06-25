@@ -5,13 +5,13 @@
 **Authentication** is the process of verifying the identity of a user or organization, while **authorization** determines what resources the user can access and ensures that the user or organization receives the appropriate access or permissions within the system. Authentication is a prerequisite for authorization.
 
 **Location:** Yerevan  
-**Date:** 04/2024  
+**Date:** 04/2023
 
 **Developer:**  
 Web Development in Java  
 **Name:** Gagikovich Gor Mkhitaryan
 
-**Project URL:** [https://github.com/mypy125/Taco-Cloud](https://github.com/mypy125/Taco-Cloud)
+**Project URL:** [https://github.com/mypy125/security-auth](https://github.com/mypy125/security-auth)
 
 ## Technology Stack
 
